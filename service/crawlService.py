@@ -172,6 +172,7 @@ class CrawlService(object):
                     logger.info('name: '+name)
                 if 'WB_text' in dv.attrib.get('class').split(' '):#介绍
                     content = self.getData_from_xPath(dv,'.')
+					#此处可以写个正则子函数，单独做匹配。这里我偷工减料了
                     data['content'] = content.replace(' ','').replace("’",'"').replace("‘",'"').replace("“",'"').replace("”",'"').replace("，",",").replace("。",".")
                     logger.info('content: '+content)
                 if 'WB_media_wrap' in dv.attrib.get('class').split(' '):#图片
