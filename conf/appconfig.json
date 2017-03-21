@@ -1,0 +1,12 @@
+{
+
+"mysqldb":{"connectStr":"mysql+pymysql://root:usbw@127.0.0.1:3307/weibo?charset=utf8"},
+
+"login":{"name":"xxx","pwd":"xxxx","loginUrl":"https://login.sina.com.cn/signup/signin.php?entry=sso"},
+
+"steps":0,
+
+"target":"搞笑"
+
+}
+
